@@ -5,6 +5,7 @@ import Grid from "./components/Grid";
 import Work from "./components/Work";
 import Stack from "./components/Stack";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -33,10 +34,9 @@ export default function Home() {
       </section>
 
       <Work />
-
       <Stack />
-
       <Contact />
+      <Footer />
     </main>
   );
 }
