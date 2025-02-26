@@ -1,8 +1,8 @@
-import Link from "next/link";
 import AnimatedText from "./utils/AnimatedText";
 import Scroll from "./components/Scroll";
 import Links from "./components/Links";
 import Grid from "./components/Grid";
+import Work from "./components/Work";
 
 export default function Home() {
   return (
@@ -30,6 +30,7 @@ export default function Home() {
         <Scroll />
       </section>
 
+      <Work />
       {/* OTHER SECTIONS */}
       <div className="">
         <p className="">more content here</p>
