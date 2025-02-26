@@ -3,6 +3,7 @@ import Scroll from "./components/Scroll";
 import Links from "./components/Links";
 import Grid from "./components/Grid";
 import Work from "./components/Work";
+import Stack from "./components/Stack";
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
       </section>
 
       <Work />
+
+      <Stack />
+
       {/* OTHER SECTIONS */}
       <div className="">
         <p className="">more content here</p>
