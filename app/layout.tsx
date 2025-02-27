@@ -27,6 +27,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans selection:bg-foreground selection:text-background`}
       >
+        <div className="fixed top-0 left-0 w-full h-1 bg-foreground z-50"></div>
+        <div className="fixed bottom-0 left-0 w-full h-1 bg-foreground z-50"></div>
+        <div className="fixed top-0 left-0 h-full w-1 bg-foreground z-50"></div>
+        <div className="fixed top-0 right-0 h-full w-1 bg-foreground z-50"></div>
         {children}
       </body>
     </html>
