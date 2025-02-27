@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="py-12 px-6 md:px-12 lg:px-24 border-t-2">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm font-medium mb-4 md:mb-0">
-          © {new Date().getFullYear()} Juneau Dahl. Some Rights Reserved.
+          © {new Date().getFullYear()} JUNEAU DAHL. Some Rights Reserved.
           Licensed under MIT.
         </p>
 

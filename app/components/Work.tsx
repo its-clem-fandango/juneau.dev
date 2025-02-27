@@ -1,14 +1,21 @@
 import React from "react";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 /* TODO: recfactor: create project data array of projects and a projectCard component --> 4? */
 
-export default function Work() {
+interface WorkProps {
+  id?: string;
+}
+
+export default function Work({ id }: WorkProps) {
   return (
-    <>
-      <section className="py-24 px-6 md:px-12 lg:px-24 border-t-8 border-foreground">
-        <h2 className="font-sans text-5xl md:text-7xl font-black uppercase tracking-tight mb-16">
-          Featured Work
-        </h2>
+    <div id={id}>
+      <section className="py-12 px-6 md:px-12 lg:px-24 bg-foreground text-background">
+        <ScrollAnimation>
+          <h2 className="font-sans text-5xl md:text-7xl font-black uppercase tracking-tight mb-16">
+            Featured Work
+          </h2>
+        </ScrollAnimation>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Project Card */}
 
@@ -80,6 +87,6 @@ export default function Work() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

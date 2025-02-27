@@ -2,27 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-  }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --accent: #ff3e00;
+  --muted: #e0e0e0;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+@layer base {
+  ::selection {
+    @apply bg-foreground text-background;
+  }
+}
+
+@layer components {
+  .brutalist-container {
+    @apply px-6 md:px-12 lg:px-24;
+  }
+
+  .brutalist-title {
+    @apply font-mono text-5xl md:text-7xl uppercase tracking-tight;
+  }
+
+  .brutalist-button {
+    @apply px-8 py-4 bg-foreground text-background font-mono text-xl uppercase tracking-wider hover:opacity-90 transition-opacity inline-block;
+  }
+
+  .brutalist-button-outline {
+    @apply px-8 py-4 border-2 border-foreground font-mono text-xl uppercase tracking-wider hover:bg-foreground hover:text-background transition-all inline-block;
+  }
+}
+
+.shadow-brutal {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
 }
