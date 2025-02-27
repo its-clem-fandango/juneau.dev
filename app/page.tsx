@@ -4,6 +4,7 @@ import Links from "./components/Links";
 import Grid from "./components/Grid";
 import Work from "./components/Work";
 import Stack from "./components/Stack";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -35,10 +36,7 @@ export default function Home() {
 
       <Stack />
 
-      {/* OTHER SECTIONS */}
-      <div className="">
-        <p className="">more content here</p>
-      </div>
+      <Contact />
     </main>
   );
 }
