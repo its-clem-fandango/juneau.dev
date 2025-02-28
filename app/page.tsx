@@ -19,14 +19,12 @@ export default function Home() {
         {/* Hero content
         TODO: add leading-[0.9]*/}
         <h1 className="font-sans text-7xl md:text-9xl uppercase font-black tracking-tighter mb-4">
-          <AnimatedText delay={300}>YOUR</AnimatedText>
-          <AnimatedText delay={500}>NAME</AnimatedText>
+          <AnimatedText delay={300}>JUNEAU</AnimatedText>
+          <AnimatedText delay={500}>DAHL</AnimatedText>
         </h1>
 
         <h2 className="font-sans text-2xl md:text-4xl font-bold uppercase tracking-wide mb-12 opacity-80">
-          <AnimatedText delay={700}>
-            Developer / Designer / Creator
-          </AnimatedText>
+          <AnimatedText delay={700}>Developer / Creator</AnimatedText>
         </h2>
 
         <Links />
