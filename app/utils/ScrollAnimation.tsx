@@ -16,13 +16,17 @@ export default function ScrollAnimation({
   className = "",
 }: ScrollAnimationProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, {
+    once: true,
+    amount: 0.3,
+    margin: "0px 0px -100px 0px",
+  });
 
   const directionOffset = {
-    up: { y: 50 },
-    down: { y: -50 },
-    left: { x: 50 },
-    right: { x: -50 },
+    up: { y: 100 },
+    down: { y: -100 },
+    left: { x: 100 },
+    right: { x: -100 },
   };
 
   const initialOffset = directionOffset[direction];
@@ -35,9 +39,9 @@ export default function ScrollAnimation({
         isInView ? { x: 0, y: 0, opacity: 1 } : { ...initialOffset, opacity: 0 }
       }
       transition={{
-        duration: 0.6,
+        duration: 1.2,
         delay: delay,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.16, 1, 0.3, 1],
       }}
       className={className}
     >
