@@ -29,19 +29,6 @@ const projects: Project[] = [
     image: "/Earthical1.png",
   },
   {
-    title: "Easy Band Shirts",
-    description:
-      "Easy Band Shirts is a custom t-shirt generator for creating shirts using the most recognizable fonts used by metal bands.",
-    technologies: [
-      { name: "React" },
-      { name: "TypeScript" },
-      { name: "Prisma" },
-    ],
-    websiteUrl: "https://easy-metal-shirts.vercel.app",
-    codeUrl: "https://github.com/its-clem-fandango/easy-metal-shirts",
-    image: "/EasyMetalShirts.png",
-  },
-  {
     title: "Be Kind",
     description:
       "BeKind is a marketplace that connects people with local charities.",
@@ -57,11 +44,33 @@ const projects: Project[] = [
     image: "/BeKind.png",
   },
   {
-    title: "Project Title 4",
+    title: "Easy Band Shirts",
+    description:
+      "Easy Band Shirts is a custom t-shirt generator for creating shirts using the most recognizable fonts used by metal bands.",
+    technologies: [
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Prisma" },
+    ],
+    websiteUrl: "https://easy-metal-shirts.vercel.app",
+    codeUrl: "https://github.com/its-clem-fandango/easy-metal-shirts",
+    image: "/EasyMetalShirts.png",
+  },
+  {
+    title: "CodeRacer",
     description: "Brief description of the project.",
-    technologies: [{ name: "React" }, { name: "Node.js" }, { name: "Express" }],
-    websiteUrl: "https://example.com",
-    codeUrl: "https://github.com/example/project4",
+    technologies: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Typescript" },
+      { name: "NestJS" },
+      { name: "Docker" },
+      { name: "MongoDB" },
+      { name: "Turborepo" },
+    ],
+    websiteUrl: "https://coderacer.xyz",
+    codeUrl: "https://github.com/its-clem-fandango/code-runner",
+    image: "/coderacerlanding.png",
   },
 ];
 
@@ -81,7 +90,7 @@ function ProjectCard({ project }: ProjectCardProps) {
               src={project.image}
               alt={project.title}
               fill
-              className="object-contain p-2"
+              className="object-contain"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           ) : (
