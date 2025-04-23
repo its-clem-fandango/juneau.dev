@@ -58,7 +58,8 @@ const projects: Project[] = [
   },
   {
     title: "CodeRacer",
-    description: "Brief description of the project.",
+    description:
+      "A multiplayer JavaScript coding game to help developers learn through competition. Players race to solve challenges in real-time — combining fun, learning, and fast problem-solving.",
     technologies: [
       { name: "Next.js" },
       { name: "React" },

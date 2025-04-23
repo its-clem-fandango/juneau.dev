@@ -24,7 +24,7 @@ export default function Contact({ id }: ContactProps) {
             <div>
               <p className="text-xl font-bold mb-8">
                 Interested in working together? Have a project in mind?
-                Let&apos;s talk about how we can collaborate
+                Let&apos;s collaborate
               </p>
 
               <a
