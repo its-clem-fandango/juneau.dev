@@ -1,5 +1,4 @@
 ---
-import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 
 interface Props {
@@ -12,7 +11,7 @@ const {
   description = "juneau.ai — AI builds the draft. We build the product.",
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://juneau.ai");
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -23,24 +22,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://juneau.a
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- OG -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
     <link rel="canonical" href={canonicalURL} />
     <title>{title}</title>
-
-    <ClientRouter />
   </head>
   <body>
     <slot />

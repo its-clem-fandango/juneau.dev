@@ -13,9 +13,7 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@fontsource/bebas-neue": "^5.2.7",
-    "@fontsource/cormorant-garamond": "^5.2.11",
-    "@fontsource/inter": "^5.2.8",
+    "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.18.0",
     "tailwindcss": "^4.2.1"
